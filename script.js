@@ -1,14 +1,14 @@
-var txtNum1 = document.getElementById('txtNumero1')
-var txtNum2 = document.getElementById('txtNumero2')
-var selOper = document.getElementById('selOperadores')
-var txtRes  = document.getElementById('txtResultado')
+var txtResultado = document.getElementById('resultado')
+
+function adicionarValorResultado(valor) {
+    txtResultado.value += valor
+}
 
 function calcular() {
-    var n1 = Number(txtNum1.value)
-    var n2 = Number(txtNum2.value)
-    var operador = selOper.value
-    var resultado = eval(`${n1} ${operador} ${n2}`)
-
-    txtRes.value = resultado
-
+    var res = txtResultado.value
+    if (res.indexOf('x') != -1) {
+        res = res.replace('x', '*')
+    }
+    res = eval(res)
+    txtResultado.value = res
 }

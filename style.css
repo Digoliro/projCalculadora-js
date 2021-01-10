@@ -1,0 +1,64 @@
+div {
+    
+    font-size: 24pt;
+}
+
+#resultado {
+    width: 500px;
+    height: 50px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 24pt;
+}
+
+#teclado {
+    width: 500px;
+    display: flex;
+    border: 1px solid black;
+}
+
+#numeros {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+
+#operadores {
+    width: 20%;
+    height: 100%;
+}
+
+
+.cx-num {
+    width: 33.33%;
+    background-color: rgb(100, 100, 100)
+}
+
+.num {
+    text-align: center;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    height: 25%;
+    
+}
+
+.disable{
+    background-color: rgb(150, 150, 150);
+    height: 25%;
+    
+}
+.num:hover{
+    background-color: rgb(100, 100, 100);
+}
+
+.oper {
+    text-align: center;
+    background-color: rgb(232, 236, 0);
+    height: 25%;
+}
+
+.oper:hover {
+    background-color: rgb(171, 173, 2);
+}
