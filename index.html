@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Calculadora</h1>
@@ -11,10 +12,13 @@
     <select id="selOperadores">
         <option value="+">+</option>
         <option value="-">-</option>
-        <option value="*">X</option>
-        <option value="/">/</option>
+        <option value="*">x</option>
+        <option value="/">&divide;</option>
     </select>
     <input type="number" id="txtNumero2"> =
     <input type="number" id="txtResultado">
+    <p><input type="button" value="Calcular" onclick="calcular()"></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
