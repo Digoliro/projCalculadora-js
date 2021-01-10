@@ -12,3 +12,7 @@ function calcular() {
     res = eval(res)
     txtResultado.value = res
 }
+
+function limpar(params) {
+    txtResultado.value = ''
+}
